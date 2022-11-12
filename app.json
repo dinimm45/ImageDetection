@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "SimilingOrNot",
+    "slug": "SimilingOrNot",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
