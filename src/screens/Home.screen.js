@@ -162,7 +162,7 @@ const Home = ()=>{
                             !isSimiling ? <View style={{backgroundColor:'black'}}><Text style={{color:'green'}}>Pizza</Text></View>:<Text style={{color:"red"}}>Not Pizza!</Text>
                         }
 
-                        {/* <TensorCamera style={styles.camera}
+                        <TensorCamera style={styles.camera}
                             type={ Camera.Constants.Type.back }
                             cameraTextureHeight={textureDims.height}
                             cameraTextureWidth={textureDims.width}
@@ -171,8 +171,8 @@ const Home = ()=>{
                             resizeDepth={3}
                             onReady={handleCameraStream}
                             autorender={true}
-                        /> */}
-                        <TouchableOpacity style={{ width:500,height:500 }} >
+                        />
+                        {/* <TouchableOpacity style={{ width:500,height:500 }} >
                             <Camera style={{width:500,height:500}} ref={(camera) => { cameraRef.current=camera }} type={Camera.Constants.Type.back} onCameraReady={()=>{ setIsCameraReady(true) }} />
                         </TouchableOpacity>
                         <Button title="Click Picture" onPress={async ()=>{
@@ -182,7 +182,7 @@ const Home = ()=>{
                                 console.log(photo)
                                 predict(photo.uri);
                             }
-                        }}></Button>
+                        }}></Button> */}
                     </TouchableOpacity>
                 ) : <TouchableOpacity style={styles.Cam} onPress={()=> setIsCameraRequired(!isCameraRequired)}>
                 <Text style={styles.text}>Upload Image/Use Camera</Text>

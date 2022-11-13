@@ -1,7 +1,5 @@
 import React,{ useEffect,useState } from 'react';
-import { StyleSheet, Text, SafeAreaView, Platform, StatusBar } from 'react-native';
-import * as tf from '@tensorflow/tfjs'
-import { bundleResourceIO } from '@tensorflow/tfjs-react-native'
+import { StyleSheet,SafeAreaView, Platform, StatusBar } from 'react-native';
 import Home from './src/screens/Home.screen';
 
 export default function App() {
